@@ -1,0 +1,80 @@
+<div class="container mt-5">
+
+  <h1 class="title text-center">My Personal Page</h1>
+
+  <section class="image-section">
+    <img src="https://avatars.githubusercontent.com/u/130682835?v=4" alt="Profile Image">
+  </section>
+
+  <section class="info">
+    <p><strong>Name:</strong> Simon Sapunar</p>
+    <p><strong>Major:</strong> Computer Engineering</p>
+    <p><strong>University:</strong> Universidad de los Andes</p>
+    <p><strong>Current State:</strong> Student</p>
+    <p><strong>Year of Enrollment:</strong> 2022</p>
+    <p><strong>GitHub:</strong> 
+      <a href="https://github.com/tu_usuario" target="_blank" class="btn btn-dark">
+        My GitHub
+      </a>
+    </p>
+  </section>
+
+  <section class="Summary">
+    <h2>About Me</h2>
+    <p>
+      I am a computer engineering student, and I am very interested in databases and how data can be stored, managed, and analyzed efficiently. 
+      I enjoy understanding how systems are structured and how they interact. 
+      I have some experience with programming concepts and database systems.
+    </p>
+  </section>
+
+  <section class="hobbies">
+    <h2>Hobbies & Interests</h2>
+    <ul>
+      <li>Programming</li>
+      <li>Gaming</li>
+      <li>Technology</li>
+      <li>D&D Player</li>
+    </ul>
+  </section>
+
+  <section class="skills">
+    <h2>Skills</h2>
+    <table class="table table-bordered table-striped">
+      <thead class="table-dark">
+        <tr>
+          <th>Skill</th>
+          <th>Level</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Python</td><td>Expert</td></tr>
+        <tr><td>JavaScript</td><td>Basic</td></tr>
+        <tr><td>HTML/CSS</td><td>Medium</td></tr>
+        <tr><td>Excel</td><td>Advanced</td></tr>
+        <tr><td>SQL</td><td>Expert</td></tr>
+        <tr><td>Ruby</td><td>Started</td></tr>
+        <tr><td>English</td><td>Advanced</td></tr>
+        <tr><td>Spanish</td><td>Native</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="interactive">
+    <h2>Interactive</h2>
+    <p>Write:</p>
+
+    <input type="text" id="Input" class="form-control w-50 mx-auto" placeholder="Type here">
+    <button onclick="Text()" class="btn btn-primary mt-2">Update</button>
+
+    <p class="result"><span id="output">...</span></p>
+  </section>
+
+</div>
+
+<script>
+function Text() {
+    var i = document.getElementById("Input").value;
+    document.getElementById("output").innerText = i;
+}
+</script>
